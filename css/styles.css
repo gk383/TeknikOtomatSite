@@ -718,3 +718,130 @@ body {
         font-size: 22px;
     }
 }
+
+/* Add mobile responsive styles at the end of the existing CSS file */
+
+/* Mobile responsive styles for sections */
+@media (max-width: 768px) {
+    /* Ensure sections don't overlap on mobile */
+    .page-section {
+        padding: 60px 0; /* Reduced padding for mobile */
+    }
+    
+    .product-categories {
+        padding: 60px 0; /* Reduced padding for mobile */
+        margin-top: 0; /* Remove any top margin */
+    }
+    
+    /* Corporate section mobile adjustments */
+    .corporate-content {
+        height: auto; /* Allow natural height on mobile */
+        margin-top: 30px; /* Add spacing between image and content */
+    }
+    
+    .corporate-image-container {
+        height: 300px; /* Smaller height for mobile */
+        margin-bottom: 20px;
+    }
+    
+    /* Feature boxes mobile layout */
+    .feature-boxes-container {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    
+    .feature-box {
+        width: 100%;
+        margin-bottom: 20px;
+        flex: none;
+        height: auto; /* Allow natural height */
+        min-height: 150px; /* Smaller min-height for mobile */
+        padding: 20px; /* Reduced padding for mobile */
+    }
+    
+    .feature-box:last-child {
+        margin-bottom: 0;
+    }
+    
+    /* Hero section mobile adjustments */
+    .hero-banner {
+        min-height: 50vh; /* Smaller height for mobile */
+        padding: 60px 0 40px 0; /* Reduced padding */
+    }
+    
+    .hero-title {
+        font-size: 2.5rem; /* Smaller title on mobile */
+    }
+    
+    .hero-stats {
+        margin-top: 30px; /* Reduced margin */
+        padding: 30px 20px; /* Adjusted padding */
+    }
+    
+    /* Section titles mobile */
+    .section-title {
+        font-size: 2.2rem; /* Smaller section titles */
+        margin-bottom: 20px;
+    }
+    
+    /* Product cards mobile layout */
+    .product-card {
+        margin-bottom: 30px; /* Add spacing between cards */
+        padding: 30px 20px; /* Adjusted padding */
+        min-height: 320px; /* Smaller min-height for mobile */
+    }
+    
+    /* Vision mission cards mobile */
+    .vision-mission-card {
+        margin-bottom: 30px; /* Add spacing between cards */
+        padding: 30px 20px; /* Adjusted padding */
+        min-height: 300px; /* Smaller min-height for mobile */
+    }
+    
+    /* Remove fixed background on mobile for better performance */
+    .hero-banner {
+        background-attachment: scroll;
+    }
+}
+
+/* Extra small devices (phones, 576px and down) */
+@media (max-width: 576px) {
+    .page-section {
+        padding: 40px 0; /* Further reduced padding for small phones */
+    }
+    
+    .product-categories {
+        padding: 40px 0;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .corporate-image-container {
+        height: 250px;
+    }
+    
+    .feature-box {
+        min-height: 120px;
+        padding: 15px;
+    }
+    
+    .hero-stats {
+        padding: 20px 15px;
+    }
+    
+    .product-card {
+        min-height: 280px;
+        padding: 25px 15px;
+    }
+    
+    .vision-mission-card {
+        min-height: 250px;
+        padding: 25px 15px;
+    }
+}
